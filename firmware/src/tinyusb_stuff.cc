@@ -34,8 +34,8 @@
 
 // These IDs are bogus. If you want to distribute any hardware using this,
 // you will have to get real ones.
-#define USB_VID 0x1B1C
-#define USB_PID 0x1B31
+#define USB_VID 0x0C45
+#define USB_PID 0x7643
 
 tusb_desc_device_t desc_device = {
     .bLength = sizeof(tusb_desc_device_t),
@@ -105,12 +105,12 @@ const uint8_t* configuration_descriptors[] = {
 char const* string_desc_arr[] = {
     (const char[]){ 0x09, 0x04 },  // 0: is supported language is English (0x0409)
 #ifdef PICO_RP2350
-    "RP2350",  // 1: Manufacturer
+    "SONiX",  // 1: Manufacturer
 #else
-    "RP2040",  // 1: Manufacturer
+    "SONiX",  // 1: Manufacturer
 #endif
-    "HID Remapper XXXX",  // 2: Product
-    "123456789012",       // 3: Serial Number
+    "Gaming Mouse",  // 2: Product
+    "",       // 3: Serial Number
 };
 
 // Invoked when received GET DEVICE DESCRIPTOR
