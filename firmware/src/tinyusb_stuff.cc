@@ -110,7 +110,7 @@ char const* string_desc_arr[] = {
     "SONiX",  // 1: Manufacturer
 #endif
     "Gaming Mouse",  // 2: Product
-    "",       // 3: Serial Number
+    "00000000",       // 3: Serial Number
 };
 
 // Invoked when received GET DEVICE DESCRIPTOR
